@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Secrets / local config
+.env
+.env.*
+!.env.example
+
+# Local data: do not commit licensed or large datasets
+data/raw/
+data/bronze/
+data/silver/
+data/gold/
+data/jquants/
+data/edinet/
+*.parquet
+*.duckdb
+*.duckdb.wal
+*.db
+
+# Allow small explicit test fixtures under tests/fixtures if added later
+!tests/fixtures/**/*.csv
+!tests/fixtures/**/*.parquet
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs / temporary files
+*.log
+.tmp/
+tmp/
